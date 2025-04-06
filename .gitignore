@@ -1,0 +1,44 @@
+# Node modules and build
+node_modules/
+dist/
+build/
+
+# IDE/editor configs
+.vscode/
+.idea/
+*.swp
+*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment variables / Secrets
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+*.json
+
+# Output from tools like coverage, linting
+coverage/
+.nyc_output/
+eslint-report/
+
+# Local dev + test
+*.local
+*.cache
+*.log
+*.tmp
+*.bak
+
+# Mac system files
+*.DS_Store
+
+# Optional: Ignore all service account keys
+**/*-private-key.json
+**/*service-account*.json

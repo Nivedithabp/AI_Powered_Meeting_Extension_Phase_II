@@ -1,0 +1,52 @@
+/* Popup styles */
+body {
+  width: 400px;
+  height: 500px;
+  padding: 16px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Content script overlay styles */
+#analysis-overlay {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 300px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+  z-index: 9999;
+  font-family: system-ui, -apple-system, sans-serif;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.analysis-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.transcription, .summary, .sentiment {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.audio-level {
+  margin-top: 8px;
+}
+
+.audio-level .label {
+  font-size: 12px;
+  margin-bottom: 4px;
+  opacity: 0.8;
+}
+
+.audio-level .meter {
+  height: 4px;
+  background: #4CAF50;
+  border-radius: 2px;
+  transition: width 0.1s ease-out;
+}
